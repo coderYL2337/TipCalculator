@@ -37,8 +37,7 @@ The following EXTRA features are implemented:
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/lqjZYyC"  ><a href="//imgur.com/a/lqjZYyC">demoTipCalculator</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/lqjZYyC"  ><a href="//imgur.com/a/lqjZYyC">demoTipCalculator</a></blockquote>
 
 
 GIF created with **Kap**
