@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Base"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/TipPercent"
+        app:layout_constraintEnd_toStartOf="@id/baseInput"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/baseInput"
+        android:layout_width="215dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="65dp"
+        android:autofillHints="10.00"
+        android:textSize="30sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@id/TipPercent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@id/Base"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/percentageValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@id/TipPercent"
+        app:layout_constraintStart_toStartOf="@id/Base"
+        app:layout_constraintTop_toTopOf="@id/TipPercent"
+        app:layout_constraintBottom_toBottomOf="@id/TipPercent" />
+
+    <TextView
+        android:id="@+id/TipPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:text="%"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@id/Base"
+        app:layout_constraintStart_toEndOf="@id/percentageValueTextView"
+        app:layout_constraintTop_toBottomOf="@id/Base" />
+
+    <SeekBar
+        android:id="@+id/percentseekBar"
+        android:layout_width="215dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@id/TipPercent"
+        app:layout_constraintTop_toBottomOf="@id/Base" />
+
+    <TextView
+        android:id="@+id/Tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Tip"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/Total"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/Base"
+        app:layout_constraintTop_toBottomOf="@id/percentageValueTextView"
+         />
+
+
+    <TextView
+        android:id="@+id/showTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=""
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/Total"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@id/baseInput"
+        app:layout_constraintTop_toBottomOf="@id/percentageValueTextView"
+        />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Total"
+        android:textSize="30dp"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/Tip"
+        app:layout_constraintTop_toBottomOf="@id/Tip"
+        />
+
+
+    <TextView
+        android:id="@+id/showTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@id/baseInput"
+        app:layout_constraintTop_toBottomOf="@id/showTip"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
